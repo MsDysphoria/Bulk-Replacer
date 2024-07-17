@@ -28,7 +28,7 @@ To install and use this software, simply extract the archive found in `Releases`
 
 ## Screenshot
 
-![image](https://github.com/user-attachments/assets/3ce8beba-6e89-4451-8749-80f85cfc2021)
+![image](https://github.com/user-attachments/assets/ffcfa581-7f50-4f52-8937-38184f2cef6b)
 
 
 
