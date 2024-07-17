@@ -5,8 +5,8 @@
 
 ## Description
 
-Finds keywords across multiple files in their file naming, extension and content and replaces them<br />
-
+Finds and replaces keywords across multiple files in their file naming, extension and content
+ 
 ## Table of Contents
 - [Information](#information)
 - [Installation](#installation)
