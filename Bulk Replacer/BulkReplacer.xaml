@@ -154,11 +154,10 @@
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="0"/>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition Height="514"/>
+                    <RowDefinition Height="544"/>
                 </Grid.RowDefinitions>
 
-                <Image x:Name="BG1" HorizontalAlignment="Center" Width="422" Source="/Images/BGPanel.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.Row="2" Height="389" VerticalAlignment="Top" Opacity="0.352" Margin="0,7,0,0">
+                <Image x:Name="BG1" HorizontalAlignment="Center" Width="422" Source="/Images/BGPanel.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Height="389" VerticalAlignment="Top" Opacity="0.352" Margin="0,37,0,0">
                     <Image.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform ScaleY="1"/>
@@ -172,55 +171,55 @@
                     </Image.Effect>
                 </Image>
 
-                <Image HorizontalAlignment="Center" Width="394" Source="/Images/Button3D.png" Grid.Row="2" ClipToBounds="True" Height="93" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,263,0,0">
+                <Image HorizontalAlignment="Center" Width="394" Source="/Images/Button3D.png" Grid.Row="1" ClipToBounds="True" Height="93" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,293,0,0">
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
 
-                <Image HorizontalAlignment="Center" Width="394" Source="/Images/Header3.png" Grid.Row="2" ClipToBounds="True" Height="174" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,48,0,0">
+                <Image HorizontalAlignment="Center" Width="394" Source="/Images/Header3.png" Grid.Row="1" ClipToBounds="True" Height="174" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,78,0,0">
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
 
-                <Image HorizontalAlignment="Left" Width="197" Source="/Images/Button3D.png" Grid.Row="2" ClipToBounds="True" Height="55" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="209,167,0,0">
+                <Image HorizontalAlignment="Left" Width="197" Source="/Images/Button3D.png" Grid.Row="1" ClipToBounds="True" Height="55" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="209,197,0,0">
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
 
-                <Image HorizontalAlignment="Left" Width="197" Source="/Images/Button3D.png" Grid.Row="2" ClipToBounds="True" Height="55" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="12,167,0,0">
+                <Image HorizontalAlignment="Left" Width="197" Source="/Images/Button3D.png" Grid.Row="1" ClipToBounds="True" Height="55" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="12,197,0,0">
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
 
-                <Image HorizontalAlignment="Center" Width="394" Source="/Images/Button3D.png" Grid.Row="2" ClipToBounds="True" Height="28" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,127,0,0">
+                <Image HorizontalAlignment="Center" Width="394" Source="/Images/Button3D.png" Grid.Row="1" ClipToBounds="True" Height="28" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,157,0,0">
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
 
-                <Image HorizontalAlignment="Center" Width="394" Source="/Images/Button3D.png" Grid.Row="2" ClipToBounds="True" Height="28" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,87,0,0">
+                <Image HorizontalAlignment="Center" Width="394" Source="/Images/Button3D.png" Grid.Row="1" ClipToBounds="True" Height="28" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,117,0,0">
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
 
-                <Image HorizontalAlignment="Center" Width="394" Source="/Images/Button3D.png" Grid.Row="2" ClipToBounds="True" Height="28" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,48,0,0">
+                <Image HorizontalAlignment="Center" Width="394" Source="/Images/Button3D.png" Grid.Row="1" ClipToBounds="True" Height="28" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,78,0,0">
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
 
-                <Image HorizontalAlignment="Center" Width="418" Source="/Images/Button3D.png" Grid.Row="2" ClipToBounds="True" Height="27" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,7,0,0">
+                <Image HorizontalAlignment="Center" Width="418" Source="/Images/Button3D.png" Grid.Row="1" ClipToBounds="True" Height="27" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,37,0,0">
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
 
-                <Grid Grid.Row="0" Grid.RowSpan="2">
+                <Grid Grid.Row="0" Grid.RowSpan="2" Margin="0,0,0,514">
 
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="303*"/>
@@ -345,41 +344,41 @@
 
                     </Button>
                 </Grid>
-                <Grid x:Name="ConsoleGrid" Margin="99,51,0,0" Grid.Row="2" HorizontalAlignment="Left" Width="279" Height="22" VerticalAlignment="Top">
+                <Grid x:Name="ConsoleGrid" Margin="99,81,0,0" Grid.Row="1" HorizontalAlignment="Left" Width="279" Height="22" VerticalAlignment="Top">
                     <TextBlock x:Name="ExportConsole" Background="Black" Foreground="White" FontFamily="Bahnschrift Light" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Padding="5" FontSize="11" Text="Pick the target directory" />
                     <Rectangle Margin="0,0,-1,0" Stroke="#FF4F93B7"/>
                     <TextBox x:Name="Find" Background="Black" Foreground="White" FontFamily="Bahnschrift Light" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Padding="2,4,2,0" FontSize="11" Text="Pick a keyword to find" Margin="0,39,-22,-39" />
                     <TextBox x:Name="Replace" Background="Black" Foreground="White" FontFamily="Bahnschrift Light" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Padding="2,4,2,0" FontSize="11" Text="Pick a keyword to replace with" Margin="0,79,-22,-79" />
                 </Grid>
-                <Image x:Name="PickDirectory" Source="/Images/Button4D.png" Cursor="Hand" Margin="379,51,0,0" Stretch="Fill" Grid.Row="2" HorizontalAlignment="Left" Width="22" Height="22" VerticalAlignment="Top" MouseDown="TargetFolder_MouseDown" MouseEnter="PickDirectory_MouseEnter" MouseLeave="PickDirectory_MouseLeave" />
+                <Image x:Name="PickDirectory" Source="/Images/Button4D.png" Cursor="Hand" Margin="379,81,0,0" Stretch="Fill" Grid.Row="1" HorizontalAlignment="Left" Width="22" Height="22" VerticalAlignment="Top" MouseDown="TargetFolder_MouseDown" MouseEnter="PickDirectory_MouseEnter" MouseLeave="PickDirectory_MouseLeave" />
                 <TextBlock x:Name="ConsoleHeader" Text="Bulk Find &amp; Replace"
                     Foreground="DarkGray"
                     FontFamily="Bahnschrift"                             
-                    Margin="150,13,0,0" FontSize="13" TextAlignment="Center" Grid.Row="2" HorizontalAlignment="Left" Width="124" Height="14" VerticalAlignment="Top"/>
-                <Grid x:Name="ConsoleGrid_Copy1" Margin="0,265,0,0" Grid.Row="2" HorizontalAlignment="Center" Width="374" Height="87" VerticalAlignment="Top">
+                    Margin="150,43,0,0" FontSize="13" TextAlignment="Center" Grid.Row="1" HorizontalAlignment="Left" Width="124" Height="14" VerticalAlignment="Top"/>
+                <Grid x:Name="ConsoleGrid_Copy1" Margin="0,295,0,0" Grid.Row="1" HorizontalAlignment="Center" Width="374" Height="87" VerticalAlignment="Top">
                     <ScrollViewer x:Name="ConsoleScrollViewer2" VerticalScrollBarVisibility="Hidden">
                         <RichTextBox x:Name="ResultConsole" Background="Black" Foreground="White" FontFamily="Bahnschrift Light" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Padding="5,3,5,5" FontSize="11" IsUndoEnabled="False" IsReadOnly="True" />
                     </ScrollViewer>
                     <Rectangle Stroke="#FF4B5B88"/>
                 </Grid>
-                <Image x:Name="RenameBtn" Source="/Images/Button2D.png" Cursor="Hand" Margin="0,232,0,0" Stretch="Fill" Grid.Row="2" HorizontalAlignment="Center" Width="120" Height="22" VerticalAlignment="Top" MouseDown="ProcessFiles_MouseDown" MouseEnter="ReplaceBtn_MouseEnter" MouseLeave="ReplaceBtn_MouseLeave" >
+                <Image x:Name="RenameBtn" Source="/Images/Button2D.png" Cursor="Hand" Stretch="Fill" Grid.Row="1" HorizontalAlignment="Center" Width="120" Height="22" VerticalAlignment="Center" MouseDown="ProcessFiles_MouseDown" MouseEnter="ReplaceBtn_MouseEnter" MouseLeave="ReplaceBtn_MouseLeave" >
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
-                <TextBlock Text="Replace" Foreground="#FFD2D2D2" Margin="0,234,0,0" TextAlignment="Center" Cursor="Hand" IsHitTestVisible="False" Grid.Row="2" HorizontalAlignment="Center" Width="102" Height="20" VerticalAlignment="Top" />
-                <Image x:Name="OpenLastLogsBtn" Source="/Images/Button3D.png" Cursor="Hand" Margin="12,361,0,0" Stretch="Fill" Grid.Row="2" HorizontalAlignment="Left" Width="120" Height="22" VerticalAlignment="Top" MouseDown="OpenLastLogsBtn_MouseDown" MouseEnter="OpenLastLogsBtn_MouseEnter" MouseLeave="OpenLastLogsBtn_MouseLeave" >
+                <TextBlock Text="Replace" Foreground="#FFD2D2D2" Margin="0,264,0,0" TextAlignment="Center" Cursor="Hand" IsHitTestVisible="False" Grid.Row="1" HorizontalAlignment="Center" Width="102" Height="20" VerticalAlignment="Top" />
+                <Image x:Name="OpenLastLogsBtn" Source="/Images/Button3D.png" Cursor="Hand" Margin="12,391,0,0" Stretch="Fill" Grid.Row="1" HorizontalAlignment="Left" Width="120" Height="22" VerticalAlignment="Top" MouseDown="OpenLastLogsBtn_MouseDown" MouseEnter="OpenLastLogsBtn_MouseEnter" MouseLeave="OpenLastLogsBtn_MouseLeave" >
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
-                <TextBlock Text="Latest Log" Foreground="#FFD2D2D2" Margin="21,363,0,0" TextAlignment="Center" Cursor="Hand" IsHitTestVisible="False" Grid.Row="2" HorizontalAlignment="Left" Width="102" Height="20" VerticalAlignment="Top" />
+                <TextBlock Text="Latest Log" Foreground="#FFD2D2D2" Margin="21,393,0,0" TextAlignment="Center" Cursor="Hand" IsHitTestVisible="False" Grid.Row="1" HorizontalAlignment="Left" Width="102" Height="20" VerticalAlignment="Top" />
                 <TextBlock x:Name="ConsoleHeader_Copy1" Text="Find :"
                     Foreground="DarkGray"
                     FontFamily="Bahnschrift"                             
-                    Margin="14,94,0,406" FontSize="13" Grid.Row="2" HorizontalAlignment="Left" Width="76" TextAlignment="Right"/>
-                <CheckBox x:Name="SubfolderCheckbox" Content="Include subfolders" HorizontalAlignment="Left" Margin="242,175,0,0" Grid.Row="2" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="13" Foreground="DarkGray" Cursor="Hand" Padding="4,0,0,0"/>
-                <ComboBox x:Name="Type" HorizontalAlignment="Left" Margin="79,183,0,0" Grid.Row="2" VerticalAlignment="Top" Width="103" SelectedIndex="0" Foreground="Black">
+                    Margin="14,124,0,406" FontSize="13" Grid.Row="1" HorizontalAlignment="Left" Width="76" TextAlignment="Right"/>
+                <CheckBox x:Name="SubfolderCheckbox" Content="Include subfolders" HorizontalAlignment="Left" Margin="242,205,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="13" Foreground="DarkGray" Cursor="Hand" Padding="4,0,0,0"/>
+                <ComboBox x:Name="Type" HorizontalAlignment="Left" Margin="79,213,0,0" Grid.Row="1" VerticalAlignment="Top" Width="103" SelectedIndex="0" Foreground="Black">
                     <ComboBoxItem Content="File name"/>
                     <ComboBoxItem Content="Extension"/>
                     <ComboBoxItem Content="Content"/>
@@ -387,22 +386,22 @@
                 <TextBlock x:Name="ConsoleHeader_Copy" Text="Replace :"
                     Foreground="DarkGray"
                     FontFamily="Bahnschrift"                             
-                    Margin="14,134,0,366" FontSize="13" TextAlignment="Right" Grid.Row="2" HorizontalAlignment="Left" Width="76"/>
+                    Margin="14,164,0,366" FontSize="13" TextAlignment="Right" Grid.Row="1" HorizontalAlignment="Left" Width="76"/>
                 <TextBlock x:Name="ConsoleHeader_Copy2" Text="Directory :"
                     Foreground="DarkGray"
                     FontFamily="Bahnschrift"                             
-                    Margin="14,55,0,445" FontSize="13" Grid.Row="2" HorizontalAlignment="Left" Width="76" TextAlignment="Right"/>
+                    Margin="14,85,0,445" FontSize="13" Grid.Row="1" HorizontalAlignment="Left" Width="76" TextAlignment="Right"/>
                 <TextBlock x:Name="ConsoleHeader_Copy3" Text="Type :"
                     Foreground="DarkGray"
                     FontFamily="Bahnschrift"                             
-                    Margin="32,187,0,313" FontSize="13" TextAlignment="Right" Grid.Row="2" HorizontalAlignment="Left" Width="38"/>
-                <Image x:Name="RevertLastChanges" Source="/Images/Button3D.png" Cursor="Hand" Margin="286,361,0,0" Stretch="Fill" Grid.Row="2" HorizontalAlignment="Left" Width="120" Height="22" VerticalAlignment="Top" MouseEnter="RevertLastChanges_MouseEnter" MouseLeave="RevertLastChanges_MouseLeave" MouseDown="RevertLastChanges_MouseDown" >
+                    Margin="32,217,0,313" FontSize="13" TextAlignment="Right" Grid.Row="1" HorizontalAlignment="Left" Width="38"/>
+                <Image x:Name="RevertLastChanges" Source="/Images/Button3D.png" Cursor="Hand" Margin="286,391,0,0" Stretch="Fill" Grid.Row="1" HorizontalAlignment="Left" Width="120" Height="22" VerticalAlignment="Top" MouseEnter="RevertLastChanges_MouseEnter" MouseLeave="RevertLastChanges_MouseLeave" MouseDown="RevertLastChanges_MouseDown" >
                     <Image.Effect>
                         <DropShadowEffect/>
                     </Image.Effect>
                 </Image>
-                <TextBlock Text="Revert Last Changes" Foreground="#FFD2D2D2" Margin="291,363,0,0" TextAlignment="Center" Cursor="Hand" IsHitTestVisible="False" Grid.Row="2" HorizontalAlignment="Left" Width="112" Height="20" VerticalAlignment="Top" />
-                <CheckBox x:Name="SensitivityCheckBox" Content="Case Sensitivity" HorizontalAlignment="Left" Margin="242,199,0,0" Grid.Row="2" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="13" Foreground="DarkGray" Cursor="Hand" Padding="4,0,0,0"/>
+                <TextBlock Text="Revert Last Changes" Foreground="#FFD2D2D2" Margin="291,393,0,0" TextAlignment="Center" Cursor="Hand" IsHitTestVisible="False" Grid.Row="1" HorizontalAlignment="Left" Width="112" Height="20" VerticalAlignment="Top" />
+                <CheckBox x:Name="SensitivityCheckBox" Content="Case Sensitivity" HorizontalAlignment="Left" Margin="242,229,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="13" Foreground="DarkGray" Cursor="Hand" Padding="4,0,0,0"/>
                 <Image x:Name="Ico_Copy" Source="/Images/Ico.png" Cursor="Hand" Margin="7,7,0,0" HorizontalAlignment="Left" Width="20" Height="20" VerticalAlignment="Top" Grid.Row="1" Stretch="Fill" >
                     <Image.Effect>
                         <DropShadowEffect/>
@@ -422,7 +421,7 @@
                     Foreground="DarkGray"
                     FontFamily="Bahnschrift"                             
                     Margin="284,11,0,0" FontSize="13" TextAlignment="Right" Grid.Row="1" HorizontalAlignment="Left" Width="52" Height="14" VerticalAlignment="Top" IsHitTestVisible="False"/>
-                <Grid x:Name="InfoGrid" Margin="-2,6,-2,118" Grid.Row="2" IsEnabled="False" Visibility="Hidden">
+                <Grid x:Name="InfoGrid" Margin="-2,36,-2,118" Grid.Row="1" IsEnabled="False" Visibility="Hidden">
                     <Grid.Background>
                         <ImageBrush ImageSource="/Images/BGPanel.png"/>
                     </Grid.Background>
@@ -544,6 +543,7 @@
                         FontFamily="Bahnschrift" FontSize="13" TextAlignment="Center" HorizontalAlignment="Center" Width="398" Height="14" VerticalAlignment="Top" Margin="0,306,0,0"/>
                     <Rectangle HorizontalAlignment="Center" Height="76" Margin="0,117,0,0" Stroke="#FF5D5D5D" VerticalAlignment="Top" Width="402"/>
                     <Rectangle HorizontalAlignment="Center" Height="64" Margin="0,230,0,0" Stroke="#FF5D5D5D" VerticalAlignment="Top" Width="402"/>
+                    <Rectangle HorizontalAlignment="Center" Height="49" Margin="0,32,0,0" Stroke="#FF5D5D5D" VerticalAlignment="Top" Width="402"/>
                 </Grid>
 
 
