@@ -20,7 +20,7 @@ Finds and replaces keywords across multiple files in their file naming, extensio
 `Where can I use it?` <br />
 - One could use it administratively while managing multiple assets, making changes to prefixes and suffixes or any other indicators that might be present in file names, making changes and corrections across all documents, redacting information such as names of people and places, changing the file extension of multiple files in projects to suit the need and such.
 
-`Where can I use it?` <br />
+`How can I use it?` <br />
 - Select a target directory and check "Include Subfolders" to include all the folders present in the directory and "Case Sensitivity" if needed. Enter the desired keyword to change and the keyword to change it with. Pick the type of change needed (filename, extension, content) and click on "Replace".
 ## Installation
 
