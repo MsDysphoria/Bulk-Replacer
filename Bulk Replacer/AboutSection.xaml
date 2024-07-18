@@ -1,0 +1,271 @@
+<UserControl x:Class="Bulk_Replacer.AboutSection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Bulk_Replacer"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <BitmapImage x:Key="ArtstationNormal" UriSource="/Images/Artstation.png"/>
+        <BitmapImage x:Key="ArtstationHover" UriSource="/Images/Artstation_H.png"/>
+        <BitmapImage x:Key="DeviantArtNormal" UriSource="/Images/DeviantArt.png"/>
+        <BitmapImage x:Key="DeviantArtHover" UriSource="/Images/DeviantArt_H.png"/>
+        <BitmapImage x:Key="DiscordNormal" UriSource="/Images/Discord.png"/>
+        <BitmapImage x:Key="DiscordHover" UriSource="/Images/Discord_H.png"/>
+        <BitmapImage x:Key="WebsiteNormal" UriSource="/Images/Website.png"/>
+        <BitmapImage x:Key="WebsiteHover" UriSource="/Images/Website_H.png"/>
+        <BitmapImage x:Key="PatreonNormal" UriSource="/Images/Patreon.png"/>
+        <BitmapImage x:Key="PatreonHover" UriSource="/Images/Patreon_H.png"/>
+        <BitmapImage x:Key="GithubNormal" UriSource="/Images/Github.png"/>
+        <BitmapImage x:Key="GithubHover" UriSource="/Images/Github_H.png"/>
+        
+        <Storyboard x:Key="FadeIn_Info">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="WhatHeader" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="WhatText" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00" Value="Transparent"/>
+                <EasingColorKeyFrame KeyTime="00:00:00.5000000" Value="Transparent"/>
+                <EasingColorKeyFrame KeyTime="00:00:01.5000000" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="WhatHeader" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00.8000000" Value="DarkGray"/>
+                <EasingColorKeyFrame KeyTime="00:00:01.2000000" Value="sc#1, 0.730460763, 0.730460763, 0.730460763"/>
+                <EasingColorKeyFrame KeyTime="00:00:01.7000000" Value="DarkGray"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="WhatHeader" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-21"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="WhereHeader" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-21"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-0.003"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="WhereHeader" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="WhereHeader" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:01.3000000" Value="DarkGray"/>
+                <EasingColorKeyFrame KeyTime="00:00:01.7000000" Value="#FFDEDEDE"/>
+                <EasingColorKeyFrame KeyTime="00:00:02.2000000" Value="DarkGray"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="WhereText" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00" Value="Transparent"/>
+                <EasingColorKeyFrame KeyTime="00:00:00.5000000" Value="Transparent"/>
+                <EasingColorKeyFrame KeyTime="00:00:01" Value="Transparent"/>
+                <EasingColorKeyFrame KeyTime="00:00:02" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="HowText" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00" Value="Transparent"/>
+                <EasingColorKeyFrame KeyTime="00:00:01" Value="Transparent"/>
+                <EasingColorKeyFrame KeyTime="00:00:01.5000000" Value="Transparent"/>
+                <EasingColorKeyFrame KeyTime="00:00:02.5000000" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="HowHeader" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.7000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="HowHeader" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-21"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.7000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="HowHeader" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:01.2000000" Value="DarkGray"/>
+                <EasingColorKeyFrame KeyTime="00:00:01.7000000" Value="DarkGray"/>
+                <EasingColorKeyFrame KeyTime="00:00:02.2000000" Value="#FFDEDEDE"/>
+                <EasingColorKeyFrame KeyTime="00:00:02.7000000" Value="DarkGray"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="InfoGrid" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <BooleanAnimationUsingKeyFrames Storyboard.TargetName="InfoGrid" Storyboard.TargetProperty="(UIElement.IsEnabled)">
+                <DiscreteBooleanKeyFrame KeyTime="00:00:00" Value="False"/>
+                <DiscreteBooleanKeyFrame KeyTime="00:00:00.5000000" Value="True"/>
+            </BooleanAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="InfoGrid" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="FadeOut_Info">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="InfoGrid" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <BooleanAnimationUsingKeyFrames Storyboard.TargetName="InfoGrid" Storyboard.TargetProperty="(UIElement.IsEnabled)">
+                <DiscreteBooleanKeyFrame KeyTime="00:00:00" Value="True"/>
+                <DiscreteBooleanKeyFrame KeyTime="00:00:00.5000000" Value="False"/>
+            </BooleanAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="InfoGrid" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        
+        </Storyboard>
+        <Storyboard x:Key="GlowAuthor">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="Author" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00" Value="DarkGray"/>
+                <EasingColorKeyFrame KeyTime="00:00:00.5000000" Value="#FFF7F7F7"/>
+                <EasingColorKeyFrame KeyTime="00:00:01" Value="DarkGray"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <Grid x:Name="InfoGrid" Margin="-2,6,-2,118" Grid.Row="2" IsEnabled="False" Visibility="Hidden">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Images/BGPanel.png"/>
+                    </Grid.Background>
+
+                    <Image HorizontalAlignment="Center" Width="422" Source="/Images/BGPanel.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Height="390" VerticalAlignment="Center" Opacity="0.25">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleY="1"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
+                    <Image HorizontalAlignment="Center" Width="422" Source="/Images/Button3D.png" ClipToBounds="True" Height="27" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
+
+                    <TextBlock x:Name="WhatText" Background="Black" Foreground="White" FontFamily="Bahnschrift Light" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Padding="5" FontSize="11" Text="Bulk Replacer is a software that imitates the &quot;find and replace&quot; functionality of Notepad, but applies it to file names, file contents, and file extensions within specified directories and across multiple files." TextAlignment="Justify" TextWrapping="Wrap" Margin="10,32,10,310" />
+                    <TextBlock x:Name="WhatHeader" Text="What is it?"
+                        Foreground="DarkGray"
+                        FontFamily="Bahnschrift"                             
+                        Margin="0,6,0,0" FontSize="13" TextAlignment="Center" HorizontalAlignment="Center" Width="398" Height="14" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <Image x:Name="Return" Source="/Images/Button3D.png" Cursor="Hand" Margin="0,347,0,0" Stretch="Fill" HorizontalAlignment="Center" Width="118" Height="22" VerticalAlignment="Top" MouseDown="Return_MouseDown">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
+                    <TextBlock Text="Return" Foreground="#FFD2D2D2" Margin="0,349,0,0" TextAlignment="Center" Cursor="Hand" IsHitTestVisible="False" HorizontalAlignment="Center" Width="90" Height="20" VerticalAlignment="Top" />
+                    <Image HorizontalAlignment="Center" Width="422" Source="/Images/Button3D.png" ClipToBounds="True" Height="27" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,85,0,0">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
+                    <TextBlock x:Name="WhereHeader" Text="Where can I use it?"
+                        Foreground="DarkGray"
+                        FontFamily="Bahnschrift"                             
+                        Margin="0,91,0,0" FontSize="13" TextAlignment="Center" HorizontalAlignment="Center" Width="398" Height="14" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="WhereText" Background="Black" Foreground="White" FontFamily="Bahnschrift Light" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Padding="5" FontSize="11" Text="One could use it administratively while managing multiple assets, making changes to prefixes and suffixes or any other indicators that might be present in file names, making changes and corrections across all documents, redacting information such as names of people and places, changing the file extension of multiple files in projects to suit the need and such." TextAlignment="Justify" TextWrapping="Wrap" Margin="10,117,10,197" />
+                    <Image HorizontalAlignment="Center" Width="422" Source="/Images/Button3D.png" ClipToBounds="True" Height="27" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,198,0,0">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
+                    <TextBlock x:Name="HowHeader" Text="How can I use it?"
+                        Foreground="DarkGray"
+                        FontFamily="Bahnschrift"                             
+                        Margin="0,204,0,0" FontSize="13" TextAlignment="Center" HorizontalAlignment="Center" Width="398" Height="14" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                        <TextBlock.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="HowText" Background="Black" Foreground="White" FontFamily="Bahnschrift Light" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Padding="5" FontSize="11" Text="Select a target directory and check &quot;Include Subfolders&quot; to include all the folders present in the directory and &quot;Case Sensitivity&quot; if needed. Enter the desired keyword to change and the keyword to change it with. Pick the type of change needed (filename, extension, content) and click on &quot;Replace&quot;." TextAlignment="Justify" TextWrapping="Wrap" Margin="12,230,12,96" />
+                    <local:AboutButton
+                        NormalImage="{StaticResource DiscordNormal}" 
+                        HoverImage="{StaticResource DiscordHover}" 
+                        Tooltip="Discord Group"
+                        Link="https://discord.gg/uQDPFt6WKn"
+                        Margin="329,342,0,0"
+                        HorizontalAlignment="Left" 
+                        Width="32"
+                        Height="32"
+                        VerticalAlignment="Top"/>
+                    <local:AboutButton
+                        NormalImage="{StaticResource GithubNormal}" 
+                        HoverImage="{StaticResource GithubHover}" 
+                        Tooltip="GitHub"
+                        Link="https://github.com/MsDysphoria"
+                        Margin="372,342,0,0"
+                        HorizontalAlignment="Left" 
+                        Width="32"
+                        Height="32"
+                        VerticalAlignment="Top"/>
+                    <local:AboutButton
+                        NormalImage="{StaticResource PatreonNormal}" 
+                        HoverImage="{StaticResource PatreonHover}" 
+                        Tooltip="GitHub"
+                        Link="https://www.patreon.com/msdysphoria"
+                        Margin="104,342,0,0"
+                        HorizontalAlignment="Left" 
+                        Width="32"
+                        Height="32"
+                        VerticalAlignment="Top"/>
+                    <local:AboutButton
+                        NormalImage="{StaticResource WebsiteNormal}" 
+                        HoverImage="{StaticResource WebsiteHover}" 
+                        Tooltip="Portfolio"
+                        Link="https://msdysphoria.shop/"
+                        Margin="61,342,0,0"
+                        HorizontalAlignment="Left" 
+                        Width="32"
+                        Height="32"
+                        VerticalAlignment="Top"/>
+                    <local:AboutButton
+                        NormalImage="{StaticResource ArtstationNormal}" 
+                        HoverImage="{StaticResource ArtstationHover}"
+                        Tooltip="Artstation"
+                        Link="https://www.artstation.com/msdysphoria"
+                        Margin="286,342,0,0" 
+                        HorizontalAlignment="Left" 
+                        Width="32"
+                        Height="32"
+                        VerticalAlignment="Top"/>
+                    <local:AboutButton
+                        NormalImage="{StaticResource DeviantArtNormal}" 
+                        HoverImage="{StaticResource DeviantArtHover}" 
+                        Tooltip="DeviantArt"
+                        Link="https://www.deviantart.com/msdysphoria"
+                        Margin="18,342,0,0"
+                        HorizontalAlignment="Left" 
+                        Width="32"
+                        Height="32"
+                        VerticalAlignment="Top"/>
+                    <Image HorizontalAlignment="Center" Width="422" Source="/Images/Button3D.png" ClipToBounds="True" Height="28" VerticalAlignment="Top" OpacityMask="Black" Stretch="Fill" Margin="0,299,0,0">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
+                    <TextBlock x:Name="Author" Text="Developed by Ms. Dysphoria"
+                        Foreground="DarkGray"
+                        FontFamily="Bahnschrift" FontSize="13" TextAlignment="Center" HorizontalAlignment="Center" Width="398" Height="14" VerticalAlignment="Top" Margin="0,306,0,0"/>
+                    <Rectangle HorizontalAlignment="Center" Height="76" Margin="0,117,0,0" Stroke="#FF5D5D5D" VerticalAlignment="Top" Width="402"/>
+                    <Rectangle HorizontalAlignment="Center" Height="64" Margin="0,230,0,0" Stroke="#FF5D5D5D" VerticalAlignment="Top" Width="402"/>
+                </Grid>
+</UserControl>
