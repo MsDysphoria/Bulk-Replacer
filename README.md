@@ -35,4 +35,4 @@ To install and use this software, simply extract the archive found in `Releases`
 ## Contact
 E-mail: msdysphoria.official@gmail.com<br />
 Discord: `msdysphoria`<br />
-[Discord Group](https://discord.gg/tG6krSHZbG)
+[Discord Group](https://discord.gg/buNr2QxjC6)
